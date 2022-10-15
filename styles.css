@@ -38,6 +38,10 @@ a {
     color: inherit;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .iconTheme {
     font-size: 2rem;
     cursor: pointer;
