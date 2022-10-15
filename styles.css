@@ -22,6 +22,8 @@ body.darkTheme {
 body {
     background-color: var(--color-bg);
     color: var(--color-font);
+
+    transition: background-color 0.5s, color 0.5s;
 }
 
 ul {
@@ -45,6 +47,7 @@ html {
 .iconTheme {
     font-size: 2rem;
     cursor: pointer;
+    user-select: none;
 }
 
 .iconShowMenu {
