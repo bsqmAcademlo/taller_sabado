@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bsquiroz</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles.css">
+
+
+</head>
+
+<body>
+
+
+    <i class='iconShowMenu bx bx-menu'></i>
+
+    <nav class="navbar">
+        <span><a href="#home">BSQUIROZ</a></span>
+
+        <ul class="navbar__menu">
+            <li><a class="link link--active" href="#home">Inicio</a></li>
+            <li><a class="link" href="#about">Sobre mi</a></li>
+            <li><a class="link" href="#portfolio">Portafolio</a></li>
+            <li><a class="link" href="#contact">Contact</a></li>
+            <li class="iconTheme">🌑</li>
+        </ul>
+    </nav>
+
+    <main class="container__principal">
+
+        <section id="home" class="hidden">
+            <h1 class="home__title">Hola yo soy <span>Stiven Quiroz</span> y soy <span>desarrollador frontend</span>
+            </h1>
+        </section>
+
+        <section id="about" class="hidden">
+            <h2>Quien soy</h2>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae placeat vel consectetur recusandae
+                similique
+                deleniti vero non nemo hic ipsum maxime, eos, quo magnam, dolorem tempore. Rerum obcaecati qui
+                reiciendis!
+            </p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci pariatur ipsam eaque asperiores.
+                Voluptate
+                soluta dolorem, autem quod placeat, obcaecati explicabo id perferendis ratione, voluptas aliquam modi
+                error
+                animi nam.</p>
+
+            <div class="about__img">
+                <img src="./assets/images/me.jpg" alt="este soy yo">
+            </div>
+        </section>
+
+        <section id="portfolio" class="hidden">
+
+            <h2>Portafolio</h2>
+            <div class="portfolios">
+                <div class="portfolio">
+                    <img src="./assets/images/porta1.jpg" alt="porta1">
+                </div>
+                <div class="portfolio">
+                    <img src="./assets/images/porta2.jpg" alt="porta2">
+                </div>
+                <div class="portfolio">
+                    <img src="./assets/images/porta3.jpg" alt="porta3">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="hidden">
+            <h2>Contactame</h2>
+
+            <form class="form">
+                <input type="text" placeholder="Ingresa tu nombre" name="nameUser" id="nameUser" required>
+                <input type="email" placeholder="Ingresa tu correo" name="emailUser" id="emailUser" required>
+
+                <textarea name="commentUser" id="commentUser" cols="30" rows="10"
+                    placeholder="Escribeme ..."></textarea>
+
+                <button class="btn">Enviar</button>
+            </form>
+
+        </section>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
