@@ -39,6 +39,19 @@ iconShowMenu.addEventListener("click", () => {
     iconShowMenu.classList.remove("bx-x");
 });
 
+links.forEach((link) => {
+    closeMenu(link);
+});
+
+function closeMenu(elementHMTL) {
+    elementHMTL.addEventListener("click", () => {
+        if (navbarMenu.classList.toggle("navbar__menu--show"))
+            return iconShowMenu.classList.add("bx-x");
+
+        iconShowMenu.classList.remove("bx-x");
+    });
+}
+
 // darkmode
 
 const iconTheme = document.querySelector(".iconTheme");
